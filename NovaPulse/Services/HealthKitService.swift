@@ -132,6 +132,29 @@ final class HealthKitService: ObservableObject {
         }
     }
 
+    // MARK: Today's Cumulative Total (steps, calories, etc.)
+    /// Use this for metrics that accumulate throughout the day (steps, active energy, resting energy).
+    /// `HKSampleQuery` returns individual bursts; only `HKStatisticsQuery` gives the true daily sum.
+    func fetchTodayCumulative(for type: MetricType) async throws -> Double {
+        guard let hkType = type.healthKitType, let unit = type.hkUnit else { return 0 }
+        let start = Calendar.current.startOfDay(for: Date())
+        let predicate = HKQuery.predicateForSamples(withStart: start, end: Date())
+        return try await withCheckedThrowingContinuation { continuation in
+            let query = HKStatisticsQuery(
+                quantityType: hkType,
+                quantitySamplePredicate: predicate,
+                options: .cumulativeSum
+            ) { _, result, error in
+                if let error {
+                    continuation.resume(throwing: error)
+                    return
+                }
+                continuation.resume(returning: result?.sumQuantity()?.doubleValue(for: unit) ?? 0)
+            }
+            store.execute(query)
+        }
+    }
+
     // MARK: Sleep Query
     func fetchSleepHours(for date: Date = Date()) async throws -> Double {
         guard let sleepType = HKObjectType.categoryType(forIdentifier: .sleepAnalysis) else { return 0 }

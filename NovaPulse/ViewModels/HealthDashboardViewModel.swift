@@ -44,6 +44,9 @@ final class HealthDashboardViewModel: ObservableObject {
         }
     }
 
+    // Metrics whose "current value" is a running sum for today, not the latest reading.
+    private static let cumulativeTypes: Set<MetricType> = [.steps, .activeEnergy, .restingEnergy]
+
     // MARK: Fetch Single Metric
     private func fetchMetric(_ type: MetricType, using service: HealthKitService) async {
         do {
@@ -54,6 +57,11 @@ final class HealthDashboardViewModel: ObservableObject {
                 let hours = try await service.fetchSleepHours()
                 currentValue = hours
                 weeklyData = []
+            } else if Self.cumulativeTypes.contains(type) {
+                // Steps / calories accumulate — must sum all samples; fetchLatestSample returns
+                // only the most recent burst (e.g. one short walk), not the day's total.
+                weeklyData = try await service.fetchDailyStatistics(for: type, days: 7)
+                currentValue = try await service.fetchTodayCumulative(for: type)
             } else {
                 weeklyData = try await service.fetchDailyStatistics(for: type, days: 7)
                 currentValue = try await service.fetchLatestSample(for: type) ?? weeklyData.last?.value ?? 0
