@@ -11,7 +11,7 @@ settings:
     CURRENT_PROJECT_VERSION: "1"
 
 # ─────────────────────────────────────────────
-# 1. iOS App
+# 1. iOS App  ← embeds the widget + watch app
 # ─────────────────────────────────────────────
 targets:
   NovaPulse:
@@ -38,6 +38,9 @@ targets:
       path: NovaPulse/NovaPulse.entitlements
       properties:
         com.apple.developer.healthkit: true
+    dependencies:
+      - target: NovaPulseWidget   # App embeds widget → iOS can find it
+      - target: NovaPulseWatch    # App embeds watch companion
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.ryankaya.novapulse
@@ -48,7 +51,7 @@ targets:
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
 
 # ─────────────────────────────────────────────
-# 2. iOS Widget Extension
+# 2. iOS Widget Extension  (no deps — app embeds it)
 # ─────────────────────────────────────────────
   NovaPulseWidget:
     type: app-extension
@@ -72,11 +75,9 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.ryankaya.novapulse.widget
         INFOPLIST_FILE: NovaPulseWidget/Info.plist
         SKIP_INSTALL: YES
-    dependencies:
-      - target: NovaPulse
 
 # ─────────────────────────────────────────────
-# 3. Apple Watch App
+# 3. Apple Watch App  ← embeds watch widget
 # ─────────────────────────────────────────────
   NovaPulseWatch:
     type: application
@@ -89,12 +90,15 @@ targets:
       properties:
         CFBundleDisplayName: NovaPulse
         WKApplication: true
+        WKCompanionAppBundleIdentifier: com.ryankaya.novapulse
         NSHealthShareUsageDescription: "NovaPulse reads heart rate, steps, blood oxygen, and activity data on Apple Watch."
         NSHealthUpdateUsageDescription: "NovaPulse does not write health data."
     entitlements:
       path: NovaPulseWatch/NovaPulseWatch.entitlements
       properties:
         com.apple.developer.healthkit: true
+    dependencies:
+      - target: NovaPulseWatchWidget  # Watch app embeds watch widget/complications
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.ryankaya.novapulse.watchkitapp
@@ -103,7 +107,7 @@ targets:
         ENABLE_PREVIEWS: YES
 
 # ─────────────────────────────────────────────
-# 4. watchOS Widget / Complication Extension
+# 4. watchOS Complication Widget  (no deps — watch app embeds it)
 # ─────────────────────────────────────────────
   NovaPulseWatchWidget:
     type: app-extension
@@ -127,5 +131,3 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.ryankaya.novapulse.watchkitapp.watchwidget
         INFOPLIST_FILE: NovaPulseWatchWidget/Info.plist
         SKIP_INSTALL: YES
-    dependencies:
-      - target: NovaPulseWatch

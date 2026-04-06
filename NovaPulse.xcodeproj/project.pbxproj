@@ -19,6 +19,7 @@
 		3D4AA38B75CB2AA9AABF8DFF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADC5811762376E0A30C313 /* DashboardView.swift */; };
 		418280613E8241468AD2DD4A /* NovaPulseWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AE2CF891D1F9FBA851D233 /* NovaPulseWidgetBundle.swift */; };
 		5963F8B02FCC258A963BA33D /* NovaPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487629512B76F211107546F2 /* NovaPulseApp.swift */; };
+		5D9C61EC2742604949C8E47F /* NovaPulseWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C8E52646A372BDCF85F74637 /* NovaPulseWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6C5C41B42879027B83E3C554 /* NovaPulseWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC685A107B2EA21E4BAABF05 /* NovaPulseWatchApp.swift */; };
 		6CBD45232B9EC61080BB0721 /* VitalityScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458ED15358E205C30CFBBAA8 /* VitalityScoreView.swift */; };
 		865E1378AE087CCB198B10B4 /* NovaPulseWatchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C5739297B30DD2BB9D9D1 /* NovaPulseWatchWidget.swift */; };
@@ -29,31 +30,76 @@
 		BBAF5239FA99346B4FF1E4C5 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48816D99F6A525917B7B6D6 /* InsightsView.swift */; };
 		BD5733CBAB7EB66DFD9A696E /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2553B2A33CF19BAF632B5CFF /* Color+Theme.swift */; };
 		C3C82C5FE71B688347E9644A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D137671768B3A1B40D60B428 /* Assets.xcassets */; };
+		C73D0F4CD57BE0C53C488B35 /* NovaPulseWatchWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A12B2ABE990CB9D42D126B51 /* NovaPulseWatchWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C805DAD93D97E67CC67747CB /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFFB7D74F78D708D7CD6F4 /* PermissionView.swift */; };
 		D1ACD513C4F9F999346BB8B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7CB9B522B6169F110F2C74 /* ContentView.swift */; };
 		D4EA3A82A7F3277A4B8288A4 /* WatchHealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CFDE3E96004E953D228BB2 /* WatchHealthViewModel.swift */; };
 		E91A4FD3F687A4B04EB910FB /* WatchActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01193C5435E107290490F332 /* WatchActivityView.swift */; };
 		EF22C24A154D530F1137834C /* VitalityScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34FD76DFEA685F3381C540B /* VitalityScore.swift */; };
+		F06622D5B201083EE5AC0605 /* NovaPulseWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 65C5DF08A97A57AF465FAC85 /* NovaPulseWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FC689C25FD0B737680A34A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA57F7B2061D0277B17E3125 /* Assets.xcassets */; };
 		FCDF7A30803DB473517F7708 /* MetricDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D934D92F211E074B317CEE /* MetricDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6004FFCC496292CDB7928A4F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E121263AB4EFEC7D945EA220 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BFD26DE83C3A634266C50C25;
-			remoteInfo = NovaPulse;
-		};
-		E712FD21AD663300B1C44253 /* PBXContainerItemProxy */ = {
+		4672E5F04B475147BE2CE6F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E121263AB4EFEC7D945EA220 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 573E92326F370EB5C5CBFE61;
 			remoteInfo = NovaPulseWatch;
 		};
+		808FACECEE42B4E731906B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E121263AB4EFEC7D945EA220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED1F12A08347E7FF000DCEE4;
+			remoteInfo = NovaPulseWatchWidget;
+		};
+		CD538242A6BDF4C53654B945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E121263AB4EFEC7D945EA220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27C89E2413B62518BFE9AD88;
+			remoteInfo = NovaPulseWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C218333805193B783B9359D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F06622D5B201083EE5AC0605 /* NovaPulseWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FA451773AB7D3970E3CF99 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C73D0F4CD57BE0C53C488B35 /* NovaPulseWatchWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC545C15A0FEEFFE973326DA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5D9C61EC2742604949C8E47F /* NovaPulseWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01193C5435E107290490F332 /* WatchActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchActivityView.swift; sourceTree = "<group>"; };
@@ -280,7 +326,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				689EC5B26008364FD38D62E4 /* PBXTargetDependency */,
 			);
 			name = NovaPulseWidget;
 			packageProductDependencies = (
@@ -295,10 +340,12 @@
 			buildPhases = (
 				48312D5E84C269C8FDFBCC66 /* Sources */,
 				D848E92F37413EDCFD981477 /* Resources */,
+				86FA451773AB7D3970E3CF99 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D5570E2C6526A7B64BE3074D /* PBXTargetDependency */,
 			);
 			name = NovaPulseWatch;
 			packageProductDependencies = (
@@ -313,10 +360,14 @@
 			buildPhases = (
 				B0623E25D1EA952ECE134B3B /* Sources */,
 				F824B07C828B05B22D15D2C4 /* Resources */,
+				EC545C15A0FEEFFE973326DA /* Embed Foundation Extensions */,
+				7C218333805193B783B9359D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				12FC540CDDE1D8D716D8DC4E /* PBXTargetDependency */,
+				1FB4AFC43D44DA3AAE56D472 /* PBXTargetDependency */,
 			);
 			name = NovaPulse;
 			packageProductDependencies = (
@@ -335,7 +386,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				62BC2E34AE2B37500EC8F30A /* PBXTargetDependency */,
 			);
 			name = NovaPulseWatchWidget;
 			packageProductDependencies = (
@@ -467,15 +517,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62BC2E34AE2B37500EC8F30A /* PBXTargetDependency */ = {
+		12FC540CDDE1D8D716D8DC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27C89E2413B62518BFE9AD88 /* NovaPulseWidget */;
+			targetProxy = CD538242A6BDF4C53654B945 /* PBXContainerItemProxy */;
+		};
+		1FB4AFC43D44DA3AAE56D472 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 573E92326F370EB5C5CBFE61 /* NovaPulseWatch */;
-			targetProxy = E712FD21AD663300B1C44253 /* PBXContainerItemProxy */;
+			targetProxy = 4672E5F04B475147BE2CE6F9 /* PBXContainerItemProxy */;
 		};
-		689EC5B26008364FD38D62E4 /* PBXTargetDependency */ = {
+		D5570E2C6526A7B64BE3074D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BFD26DE83C3A634266C50C25 /* NovaPulse */;
-			targetProxy = 6004FFCC496292CDB7928A4F /* PBXContainerItemProxy */;
+			target = ED1F12A08347E7FF000DCEE4 /* NovaPulseWatchWidget */;
+			targetProxy = 808FACECEE42B4E731906B0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
