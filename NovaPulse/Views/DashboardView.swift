@@ -52,7 +52,7 @@ struct DashboardView: View {
 
     // MARK: Header
     private var headerSection: some View {
-        HStack {
+        HStack(alignment: .center) {
             VStack(alignment: .leading, spacing: 4) {
                 Text("NovaPulse")
                     .font(.system(size: 28, weight: .bold, design: .rounded))
@@ -62,15 +62,10 @@ struct DashboardView: View {
                     .foregroundStyle(.white.opacity(0.5))
             }
             Spacer()
-            Button {
-                dashboardVM.fetchAllMetrics()
-            } label: {
-                Image(systemName: dashboardVM.isRefreshing ? "arrow.clockwise.circle.fill" : "arrow.clockwise.circle")
-                    .font(.title2)
-                    .foregroundStyle(.white.opacity(0.7))
-                    .rotationEffect(.degrees(dashboardVM.isRefreshing ? 360 : 0))
-                    .animation(dashboardVM.isRefreshing ? .linear(duration: 1).repeatForever(autoreverses: false) : .default,
-                               value: dashboardVM.isRefreshing)
+            if dashboardVM.isRefreshing {
+                ProgressView()
+                    .tint(.white.opacity(0.6))
+                    .scaleEffect(0.85)
             }
         }
         .padding(.horizontal)
