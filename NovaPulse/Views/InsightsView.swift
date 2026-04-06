@@ -7,7 +7,7 @@ struct InsightsView: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Image(systemName: "sparkles")
-                    .foregroundStyle(.npOrangeFallback)
+                    .foregroundStyle(Color.npOrangeFallback)
                 Text("Biometric Insights")
                     .font(.headline)
                     .foregroundStyle(.white)
@@ -78,9 +78,9 @@ struct InsightRowView: View {
 
     private var priorityColor: Color {
         switch insight.priority {
-        case .high:   return .npRedFallback
-        case .medium: return .npOrangeFallback
-        case .low:    return .npGreenFallback
+        case .high:   return Color.npRedFallback
+        case .medium: return Color.npOrangeFallback
+        case .low:    return Color.npGreenFallback
         }
     }
 }

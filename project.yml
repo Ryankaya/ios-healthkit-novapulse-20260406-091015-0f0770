@@ -3,12 +3,16 @@ options:
   bundleIdPrefix: com.ryankaya
   deploymentTarget:
     iOS: "17.0"
+    watchOS: "10.0"
 settings:
   base:
     SWIFT_VERSION: "5.9"
     MARKETING_VERSION: "1.0.0"
     CURRENT_PROJECT_VERSION: "1"
 
+# ─────────────────────────────────────────────
+# 1. iOS App
+# ─────────────────────────────────────────────
 targets:
   NovaPulse:
     type: application
@@ -42,3 +46,87 @@ targets:
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         ENABLE_PREVIEWS: YES
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+
+# ─────────────────────────────────────────────
+# 2. iOS Widget Extension
+# ─────────────────────────────────────────────
+  NovaPulseWidget:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: NovaPulseWidget
+    info:
+      path: NovaPulseWidget/Info.plist
+      properties:
+        CFBundleDisplayName: NovaPulseWidget
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+        NSHealthShareUsageDescription: "NovaPulse widget reads step and heart rate data."
+    entitlements:
+      path: NovaPulseWidget/NovaPulseWidget.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ryankaya.novapulse.widget
+        INFOPLIST_FILE: NovaPulseWidget/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SKIP_INSTALL: YES
+    dependencies:
+      - target: NovaPulse
+
+# ─────────────────────────────────────────────
+# 3. Apple Watch App
+# ─────────────────────────────────────────────
+  NovaPulseWatch:
+    type: application
+    platform: watchOS
+    deploymentTarget: "10.0"
+    sources:
+      - path: NovaPulseWatch
+    info:
+      path: NovaPulseWatch/Info.plist
+      properties:
+        CFBundleDisplayName: NovaPulse
+        WKApplication: true
+        NSHealthShareUsageDescription: "NovaPulse reads heart rate, steps, blood oxygen, and activity data on Apple Watch."
+        NSHealthUpdateUsageDescription: "NovaPulse does not write health data."
+    entitlements:
+      path: NovaPulseWatch/NovaPulseWatch.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ryankaya.novapulse.watchkitapp
+        INFOPLIST_FILE: NovaPulseWatch/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+
+# ─────────────────────────────────────────────
+# 4. watchOS Widget / Complication Extension
+# ─────────────────────────────────────────────
+  NovaPulseWatchWidget:
+    type: app-extension
+    platform: watchOS
+    deploymentTarget: "10.0"
+    sources:
+      - path: NovaPulseWatchWidget
+    info:
+      path: NovaPulseWatchWidget/Info.plist
+      properties:
+        CFBundleDisplayName: NovaPulseWatchWidget
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+        NSHealthShareUsageDescription: "NovaPulse complication reads step and heart rate data."
+    entitlements:
+      path: NovaPulseWatchWidget/NovaPulseWatchWidget.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ryankaya.novapulse.watchkitapp.watchwidget
+        INFOPLIST_FILE: NovaPulseWatchWidget/Info.plist
+        SKIP_INSTALL: YES
+    dependencies:
+      - target: NovaPulseWatch

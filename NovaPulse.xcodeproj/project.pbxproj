@@ -7,45 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F0EF9E934C77E8E5D25D52 /* WatchDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104168C35B13E3EF37EDD35 /* WatchDashboardView.swift */; };
+		0A908DAF7688D0F57833D148 /* WatchStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3409C5B017EEB2A374449 /* WatchStepsView.swift */; };
 		12EAA40649DDDC657311E31A /* MetricCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AB0531F4F7C538385EFED /* MetricCardView.swift */; };
+		1669B0A3B3B9ADA087C17AED /* WidgetHealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B38198CA624BF31402384 /* WidgetHealthService.swift */; };
+		18255E8D82160A3F5474453B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFECC36750D0D4AC40E322C /* Assets.xcassets */; };
+		1C4C55608FF6D6362126C041 /* WatchHealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355FC7A46CEB987C70B7FB4E /* WatchHealthService.swift */; };
 		227ED691511C06024623D839 /* MetricDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986BEB6F1751C2A5B4E51732 /* MetricDetailViewModel.swift */; };
 		25FB5B3AAD39F9D3FDC1F175 /* HealthDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1459FB68D0B8287F525F142 /* HealthDashboardViewModel.swift */; };
+		37AFDA73FFFAC9FD95A768A0 /* WatchHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D442100D6EA667DA7CB4D8 /* WatchHeartView.swift */; };
 		3D4AA38B75CB2AA9AABF8DFF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADC5811762376E0A30C313 /* DashboardView.swift */; };
+		418280613E8241468AD2DD4A /* NovaPulseWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AE2CF891D1F9FBA851D233 /* NovaPulseWidgetBundle.swift */; };
 		5963F8B02FCC258A963BA33D /* NovaPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487629512B76F211107546F2 /* NovaPulseApp.swift */; };
+		6C5C41B42879027B83E3C554 /* NovaPulseWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC685A107B2EA21E4BAABF05 /* NovaPulseWatchApp.swift */; };
 		6CBD45232B9EC61080BB0721 /* VitalityScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458ED15358E205C30CFBBAA8 /* VitalityScoreView.swift */; };
+		865E1378AE087CCB198B10B4 /* NovaPulseWatchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C5739297B30DD2BB9D9D1 /* NovaPulseWatchWidget.swift */; };
 		87708DE0BC11F6791FEC24AF /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6B4A2A156DF848EEC43695 /* HealthKitService.swift */; };
+		9095FCB3942D718E6C4522A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D0ECB8C4896383D62D1642 /* Assets.xcassets */; };
 		93C02AC10391228485E5A1B5 /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221457D01A53289A9E655DF4 /* HealthMetric.swift */; };
+		AE24898A3891108BF9EC5116 /* StepsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFECC3177A483D2D8D5B3207 /* StepsWidget.swift */; };
 		BBAF5239FA99346B4FF1E4C5 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48816D99F6A525917B7B6D6 /* InsightsView.swift */; };
 		BD5733CBAB7EB66DFD9A696E /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2553B2A33CF19BAF632B5CFF /* Color+Theme.swift */; };
 		C3C82C5FE71B688347E9644A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D137671768B3A1B40D60B428 /* Assets.xcassets */; };
 		C805DAD93D97E67CC67747CB /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFFB7D74F78D708D7CD6F4 /* PermissionView.swift */; };
 		D1ACD513C4F9F999346BB8B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7CB9B522B6169F110F2C74 /* ContentView.swift */; };
+		D4EA3A82A7F3277A4B8288A4 /* WatchHealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CFDE3E96004E953D228BB2 /* WatchHealthViewModel.swift */; };
+		E91A4FD3F687A4B04EB910FB /* WatchActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01193C5435E107290490F332 /* WatchActivityView.swift */; };
 		EF22C24A154D530F1137834C /* VitalityScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34FD76DFEA685F3381C540B /* VitalityScore.swift */; };
+		FC689C25FD0B737680A34A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA57F7B2061D0277B17E3125 /* Assets.xcassets */; };
 		FCDF7A30803DB473517F7708 /* MetricDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D934D92F211E074B317CEE /* MetricDetailView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6004FFCC496292CDB7928A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E121263AB4EFEC7D945EA220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFD26DE83C3A634266C50C25;
+			remoteInfo = NovaPulse;
+		};
+		E712FD21AD663300B1C44253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E121263AB4EFEC7D945EA220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 573E92326F370EB5C5CBFE61;
+			remoteInfo = NovaPulseWatch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01193C5435E107290490F332 /* WatchActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchActivityView.swift; sourceTree = "<group>"; };
+		01CFDE3E96004E953D228BB2 /* WatchHealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHealthViewModel.swift; sourceTree = "<group>"; };
+		081EF353588CCD2AAA599D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		08E3409C5B017EEB2A374449 /* WatchStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStepsView.swift; sourceTree = "<group>"; };
 		1D6B4A2A156DF848EEC43695 /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
 		221457D01A53289A9E655DF4 /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
 		2553B2A33CF19BAF632B5CFF /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		3411B1016C3DDAA810FF699F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		355FC7A46CEB987C70B7FB4E /* WatchHealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHealthService.swift; sourceTree = "<group>"; };
 		458ED15358E205C30CFBBAA8 /* VitalityScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalityScoreView.swift; sourceTree = "<group>"; };
 		46ADC5811762376E0A30C313 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		487629512B76F211107546F2 /* NovaPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPulseApp.swift; sourceTree = "<group>"; };
 		4A7CB9B522B6169F110F2C74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53E104E3C1A189E23CB98450 /* NovaPulse.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NovaPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D442100D6EA667DA7CB4D8 /* WatchHeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHeartView.swift; sourceTree = "<group>"; };
+		65C5DF08A97A57AF465FAC85 /* NovaPulseWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovaPulseWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D367B66FB6F152480533E4 /* NovaPulse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NovaPulse.entitlements; sourceTree = "<group>"; };
 		83D934D92F211E074B317CEE /* MetricDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricDetailView.swift; sourceTree = "<group>"; };
+		91089A3A1B813ACC8107AEE3 /* NovaPulseWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NovaPulseWatch.entitlements; sourceTree = "<group>"; };
+		93442FF1522E0E6B76A30D30 /* NovaPulseWatchWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NovaPulseWatchWidget.entitlements; sourceTree = "<group>"; };
 		986BEB6F1751C2A5B4E51732 /* MetricDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricDetailViewModel.swift; sourceTree = "<group>"; };
+		A104168C35B13E3EF37EDD35 /* WatchDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDashboardView.swift; sourceTree = "<group>"; };
+		A12B2ABE990CB9D42D126B51 /* NovaPulseWatchWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NovaPulseWatchWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2BECAE32F912B439C4833C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A34FD76DFEA685F3381C540B /* VitalityScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalityScore.swift; sourceTree = "<group>"; };
 		AADFFB7D74F78D708D7CD6F4 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
 		B48816D99F6A525917B7B6D6 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		BA57F7B2061D0277B17E3125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9AB0531F4F7C538385EFED /* MetricCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCardView.swift; sourceTree = "<group>"; };
+		BDFECC36750D0D4AC40E322C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C17C5739297B30DD2BB9D9D1 /* NovaPulseWatchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPulseWatchWidget.swift; sourceTree = "<group>"; };
+		C1D16A08C20516788B3AF219 /* NovaPulseWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NovaPulseWidget.entitlements; sourceTree = "<group>"; };
+		C8E52646A372BDCF85F74637 /* NovaPulseWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = NovaPulseWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D0ECB8C4896383D62D1642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D137671768B3A1B40D60B428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1459FB68D0B8287F525F142 /* HealthDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDashboardViewModel.swift; sourceTree = "<group>"; };
+		DFECC3177A483D2D8D5B3207 /* StepsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidget.swift; sourceTree = "<group>"; };
+		E8AE2CF891D1F9FBA851D233 /* NovaPulseWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPulseWidgetBundle.swift; sourceTree = "<group>"; };
+		EC685A107B2EA21E4BAABF05 /* NovaPulseWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPulseWatchApp.swift; sourceTree = "<group>"; };
+		F22B38198CA624BF31402384 /* WidgetHealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetHealthService.swift; sourceTree = "<group>"; };
+		FF28622F2C9E7A9BB98F2B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		1C51C61FA542463DE1620601 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				01CFDE3E96004E953D228BB2 /* WatchHealthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		1D08BE3233304F72ED550F01 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +119,31 @@
 				458ED15358E205C30CFBBAA8 /* VitalityScoreView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		61E1F027E06AAA9353FEEE5A /* NovaPulseWatchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BDFECC36750D0D4AC40E322C /* Assets.xcassets */,
+				FF28622F2C9E7A9BB98F2B32 /* Info.plist */,
+				93442FF1522E0E6B76A30D30 /* NovaPulseWatchWidget.entitlements */,
+				C17C5739297B30DD2BB9D9D1 /* NovaPulseWatchWidget.swift */,
+			);
+			path = NovaPulseWatchWidget;
+			sourceTree = "<group>";
+		};
+		6D4B997D4764421D7E35FB1C /* NovaPulseWatch */ = {
+			isa = PBXGroup;
+			children = (
+				BA57F7B2061D0277B17E3125 /* Assets.xcassets */,
+				081EF353588CCD2AAA599D40 /* Info.plist */,
+				91089A3A1B813ACC8107AEE3 /* NovaPulseWatch.entitlements */,
+				EC685A107B2EA21E4BAABF05 /* NovaPulseWatchApp.swift */,
+				BEA41ECFA614C2664403423B /* Services */,
+				1C51C61FA542463DE1620601 /* ViewModels */,
+				FB8B2D731509D8D3E2C90450 /* Views */,
+			);
+			path = NovaPulseWatch;
 			sourceTree = "<group>";
 		};
 		8103C44BE5FC816F9C63051A /* Services */ = {
@@ -80,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				53E104E3C1A189E23CB98450 /* NovaPulse.app */,
+				65C5DF08A97A57AF465FAC85 /* NovaPulseWatch.app */,
+				A12B2ABE990CB9D42D126B51 /* NovaPulseWatchWidget.appex */,
+				C8E52646A372BDCF85F74637 /* NovaPulseWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +190,14 @@
 			path = NovaPulse;
 			sourceTree = "<group>";
 		};
+		BEA41ECFA614C2664403423B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				355FC7A46CEB987C70B7FB4E /* WatchHealthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C105ED3F8C642BF0A69ADEE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +213,19 @@
 				487629512B76F211107546F2 /* NovaPulseApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		C95A427FE5147B7D166E33CA /* NovaPulseWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D0D0ECB8C4896383D62D1642 /* Assets.xcassets */,
+				A2BECAE32F912B439C4833C4 /* Info.plist */,
+				C1D16A08C20516788B3AF219 /* NovaPulseWidget.entitlements */,
+				E8AE2CF891D1F9FBA851D233 /* NovaPulseWidgetBundle.swift */,
+				DFECC3177A483D2D8D5B3207 /* StepsWidget.swift */,
+				F22B38198CA624BF31402384 /* WidgetHealthService.swift */,
+			);
+			path = NovaPulseWidget;
 			sourceTree = "<group>";
 		};
 		D2915D90B780AC92A98EAA44 /* Extensions */ = {
@@ -138,13 +249,64 @@
 			isa = PBXGroup;
 			children = (
 				B1DFFCE2FA73A4FBECD18618 /* NovaPulse */,
+				6D4B997D4764421D7E35FB1C /* NovaPulseWatch */,
+				61E1F027E06AAA9353FEEE5A /* NovaPulseWatchWidget */,
+				C95A427FE5147B7D166E33CA /* NovaPulseWidget */,
 				B0314BC1353986B5BFC5246D /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		FB8B2D731509D8D3E2C90450 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01193C5435E107290490F332 /* WatchActivityView.swift */,
+				A104168C35B13E3EF37EDD35 /* WatchDashboardView.swift */,
+				61D442100D6EA667DA7CB4D8 /* WatchHeartView.swift */,
+				08E3409C5B017EEB2A374449 /* WatchStepsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		27C89E2413B62518BFE9AD88 /* NovaPulseWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2BFCE0107B08CE95F6AB933 /* Build configuration list for PBXNativeTarget "NovaPulseWidget" */;
+			buildPhases = (
+				DBCD15597F7A05DB60DFE2D0 /* Sources */,
+				73ADCBBCE6FC0892A95B7F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				689EC5B26008364FD38D62E4 /* PBXTargetDependency */,
+			);
+			name = NovaPulseWidget;
+			packageProductDependencies = (
+			);
+			productName = NovaPulseWidget;
+			productReference = C8E52646A372BDCF85F74637 /* NovaPulseWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		573E92326F370EB5C5CBFE61 /* NovaPulseWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7E0AF505C38E9A92A73C40 /* Build configuration list for PBXNativeTarget "NovaPulseWatch" */;
+			buildPhases = (
+				48312D5E84C269C8FDFBCC66 /* Sources */,
+				D848E92F37413EDCFD981477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NovaPulseWatch;
+			packageProductDependencies = (
+			);
+			productName = NovaPulseWatch;
+			productReference = 65C5DF08A97A57AF465FAC85 /* NovaPulseWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
 		BFD26DE83C3A634266C50C25 /* NovaPulse */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610104E62BD0AFD37C97263D /* Build configuration list for PBXNativeTarget "NovaPulse" */;
@@ -162,6 +324,25 @@
 			productName = NovaPulse;
 			productReference = 53E104E3C1A189E23CB98450 /* NovaPulse.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ED1F12A08347E7FF000DCEE4 /* NovaPulseWatchWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E13C9EB7019C492A8E423EC3 /* Build configuration list for PBXNativeTarget "NovaPulseWatchWidget" */;
+			buildPhases = (
+				329794D0B35B4052E5A8FDF4 /* Sources */,
+				DB5AB0A201CE879B67E3EDE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62BC2E34AE2B37500EC8F30A /* PBXTargetDependency */,
+			);
+			name = NovaPulseWatchWidget;
+			packageProductDependencies = (
+			);
+			productName = NovaPulseWatchWidget;
+			productReference = A12B2ABE990CB9D42D126B51 /* NovaPulseWatchWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -187,11 +368,38 @@
 			projectRoot = "";
 			targets = (
 				BFD26DE83C3A634266C50C25 /* NovaPulse */,
+				573E92326F370EB5C5CBFE61 /* NovaPulseWatch */,
+				ED1F12A08347E7FF000DCEE4 /* NovaPulseWatchWidget */,
+				27C89E2413B62518BFE9AD88 /* NovaPulseWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		73ADCBBCE6FC0892A95B7F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9095FCB3942D718E6C4522A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D848E92F37413EDCFD981477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC689C25FD0B737680A34A33 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5AB0A201CE879B67E3EDE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18255E8D82160A3F5474453B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F824B07C828B05B22D15D2C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,6 +411,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		329794D0B35B4052E5A8FDF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				865E1378AE087CCB198B10B4 /* NovaPulseWatchWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48312D5E84C269C8FDFBCC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C5C41B42879027B83E3C554 /* NovaPulseWatchApp.swift in Sources */,
+				E91A4FD3F687A4B04EB910FB /* WatchActivityView.swift in Sources */,
+				04F0EF9E934C77E8E5D25D52 /* WatchDashboardView.swift in Sources */,
+				1C4C55608FF6D6362126C041 /* WatchHealthService.swift in Sources */,
+				D4EA3A82A7F3277A4B8288A4 /* WatchHealthViewModel.swift in Sources */,
+				37AFDA73FFFAC9FD95A768A0 /* WatchHeartView.swift in Sources */,
+				0A908DAF7688D0F57833D148 /* WatchStepsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0623E25D1EA952ECE134B3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,9 +454,98 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBCD15597F7A05DB60DFE2D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418280613E8241468AD2DD4A /* NovaPulseWidgetBundle.swift in Sources */,
+				AE24898A3891108BF9EC5116 /* StepsWidget.swift in Sources */,
+				1669B0A3B3B9ADA087C17AED /* WidgetHealthService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		62BC2E34AE2B37500EC8F30A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 573E92326F370EB5C5CBFE61 /* NovaPulseWatch */;
+			targetProxy = E712FD21AD663300B1C44253 /* PBXContainerItemProxy */;
+		};
+		689EC5B26008364FD38D62E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFD26DE83C3A634266C50C25 /* NovaPulse */;
+			targetProxy = 6004FFCC496292CDB7928A4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0C82D4B24567E87FDF2ECB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NovaPulseWatch/NovaPulseWatch.entitlements;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NovaPulseWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryankaya.novapulse.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		1CCDE94FA4881B58533111D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NovaPulseWatchWidget/NovaPulseWatchWidget.entitlements;
+				INFOPLIST_FILE = NovaPulseWatchWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryankaya.novapulse.watchkitapp.watchwidget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		465B4CB4802F606CEF163972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NovaPulseWatchWidget/NovaPulseWatchWidget.entitlements;
+				INFOPLIST_FILE = NovaPulseWatchWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryankaya.novapulse.watchkitapp.watchwidget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		846557891D72A5D36B694C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NovaPulseWatch/NovaPulseWatch.entitlements;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NovaPulseWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryankaya.novapulse.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
 		9475FA940EC0B25939299794 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -306,10 +625,10 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -330,6 +649,44 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryankaya.novapulse;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F01986782E3BC08E248CBEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NovaPulseWidget/NovaPulseWidget.entitlements;
+				INFOPLIST_FILE = NovaPulseWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryankaya.novapulse.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F879AC4B9A3033792BA8BCBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NovaPulseWidget/NovaPulseWidget.entitlements;
+				INFOPLIST_FILE = NovaPulseWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryankaya.novapulse.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -385,10 +742,10 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -409,6 +766,33 @@
 			buildConfigurations = (
 				D09F3278804C9479AA890739 /* Debug */,
 				F8C521627BB1F469A2F1A0DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2BFCE0107B08CE95F6AB933 /* Build configuration list for PBXNativeTarget "NovaPulseWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F879AC4B9A3033792BA8BCBB /* Debug */,
+				F01986782E3BC08E248CBEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E13C9EB7019C492A8E423EC3 /* Build configuration list for PBXNativeTarget "NovaPulseWatchWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				465B4CB4802F606CEF163972 /* Debug */,
+				1CCDE94FA4881B58533111D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC7E0AF505C38E9A92A73C40 /* Build configuration list for PBXNativeTarget "NovaPulseWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846557891D72A5D36B694C5B /* Debug */,
+				0C82D4B24567E87FDF2ECB15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
